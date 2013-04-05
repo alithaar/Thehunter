@@ -18,7 +18,7 @@ from pprint import pprint
 
 APP_ID = '179745182062082'
 SERVER_PORT = 8080
-REDIRECT_URI = 'http://127.0.0.1:%s/' % SERVER_PORT
+REDIRECT_URI = 'http://hollow-beach-5255.herokuapp.com:%s/' % SERVER_PORT
 ACCESS_TOKEN = None
 LOCAL_FILE = '.fb_access_token'
 AUTH_SCOPE = []
