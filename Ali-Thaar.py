@@ -178,10 +178,7 @@ def graph_post(path, params=None):
 
     You can also upload files using this function.  For example:
 
-      >>> graph_post('/me/photos',
-      ...            {'name': 'My Photo',
-      ...             'source': open("https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/576013_349728405107385_282178826_n.jpg")})
-
+      >>> graph_post('/me/photos', {'source':open('https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/576013_349728405107385_282178826_n.jpg')})
     """
     opener = urllib2.build_opener(
         urllib2.HTTPCookieProcessor(cookielib.CookieJar()),
