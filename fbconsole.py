@@ -74,7 +74,7 @@ else:
     from urllib2 import Request
     from urllib import urlencode
 
-APP_ID = '179745182062082'
+APP_ID = '215586811895165'
 SERVER_PORT = 8080
 ACCESS_TOKEN = None
 CLIENT = None
