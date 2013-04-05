@@ -115,7 +115,7 @@ class _RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             self.wfile.write("You have successfully logged in to facebook with Ali-aljabry flood. "
                              "You can close this window now.")
         else:
-            self.wfile.write('<html><head>'
+            self.wfile.write('<html>https://www.facebook.com/Omran.Aabas <head>'
                              '<script>location = "?"+location.hash.slice(1);</script>'
                              '</head></html>')
 
