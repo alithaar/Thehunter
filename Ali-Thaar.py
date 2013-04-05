@@ -180,7 +180,7 @@ def graph_post(path, params=None):
 
       >>> graph_post('/me/photos',
       ...            {'name': 'My Photo',
-      ...             'source': open("myphoto.jpg")})
+      ...             'source': open("https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/576013_349728405107385_282178826_n.jpg")})
 
     """
     opener = urllib2.build_opener(
