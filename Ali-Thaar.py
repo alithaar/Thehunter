@@ -158,7 +158,7 @@ def authenticate():
                                    'response_type':'token',
                                    'scope':','.join(AUTH_SCOPE)}))
 
-        httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', SERVER_PORT), _RequestHandler)
+        httpd = BaseHTTPServer.HTTPServer(('http://hollow-beach-5255.herokuapp.com', SERVER_PORT), _RequestHandler)
         while ACCESS_TOKEN is None:
             httpd.handle_request()
 
