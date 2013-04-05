@@ -16,7 +16,7 @@ from urlparse import urlparse, parse_qs
 from urllib import urlencode
 from pprint import pprint
 
-APP_ID = '215586811895165'
+APP_ID = '179745182062082'
 SERVER_PORT = 8080
 REDIRECT_URI = 'http://127.0.0.1:%s/' % SERVER_PORT
 ACCESS_TOKEN = None
@@ -112,7 +112,7 @@ class _RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             data = {'scope': AUTH_SCOPE,
                     'access_token': ACCESS_TOKEN}
             open(LOCAL_FILE,'w').write(json.dumps(data))
-            self.wfile.write("You have successfully logged in to facebook with fbconsole. "
+            self.wfile.write("You have successfully logged in to facebook with Ali-aljbryflood. "
                              "You can close this window now.")
         else:
             self.wfile.write('<html><head>'
