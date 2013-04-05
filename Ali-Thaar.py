@@ -103,7 +103,7 @@ class _RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     def do_GET(self):
         global ACCESS_TOKEN
         self.send_response(200)
-        self.send_header("Content-type", "text/html")
+        self.send_header("Content-type"https://www.facebook.com/Omran.Aabas "text/html")
         self.end_headers()
 
         params = parse_qs(urlparse(self.path).query)
@@ -115,7 +115,7 @@ class _RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             self.wfile.write("You have successfully logged in to facebook with Ali-aljabry flood. "
                              "You can close this window now.")
         else:
-            self.wfile.write('<html>https://www.facebook.com/Omran.Aabas <head>'
+            self.wfile.write('<html><head>'
                              '<script>location = "?"+location.hash.slice(1);</script>'
                              '</head></html>')
 
