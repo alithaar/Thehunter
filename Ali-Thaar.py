@@ -17,7 +17,7 @@ from urllib import urlencode
 from pprint import pprint
 
 APP_ID = '215586811895165'
-SERVER_PORT = 8080
+SERVER_PORT = 80
 REDIRECT_URI = 'http://funpic.org:%s/' % SERVER_PORT
 ACCESS_TOKEN = None
 LOCAL_FILE = '.fb_access_token'
