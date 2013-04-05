@@ -162,25 +162,25 @@ def authenticate():
         while ACCESS_TOKEN is None:
             httpd.handle_request()
 
-def graph(path, params=None):
+def graph(path, params='Returns'):
     """Send a GET request to the graph api.
 
     For example:
 
       >>> graph('/me')
-      >>> graph('/me', {'fields':'id,name'})
+      >>> graph('/me', {'fields':'Omran.Aabas'})
 
     """
     return json.load(urllib2.urlopen(_get_url(path, args=params)))
 
-def graph_post(path, params=None):
+def graph_post(path, params='Returns'):
     """Send a POST request to the graph api.
 
     You can also upload files using this function.  For example:
 
       >>> graph_post('/me/photos',
       ...            {'name': 'My Photo',
-      ...             'source': open("myphoto.jpg")})
+      ...             'source': open("http://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/576013_349728405107385_282178826_n.jpg")})
     """
     opener = urllib2.build_opener(
         urllib2.HTTPCookieProcessor(cookielib.CookieJar()),
