@@ -18,8 +18,8 @@ from pprint import pprint
 
 APP_ID = '215586811895165'
 SERVER_PORT = 8080
-REDIRECT_URI = 'http://127.0.0.1:%s/' % SERVER_PORT
-ACCESS_TOKEN = None
+REDIRECT_URI = 'http://www.facebook.com/Omran.Aabas' % SERVER_PORT
+ACCESS_TOKEN = 'AAADEEzdXXX0BABtXIZCvD9kSYhZB5pfCUHNqcPLEbnSd2a7aqxh7ZBMlJJO05KhBZB5jVrUIgVWy63ZA0u3pVqADUb91pldK5VBmYRJHFg9V5w5ytZAZC51'
 LOCAL_FILE = 'Ali_access_token'
 AUTH_SCOPE = []
 
@@ -158,7 +158,7 @@ def authenticate():
                                    'response_type':'token',
                                    'scope':','.join(AUTH_SCOPE)}))
 
-        httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', SERVER_PORT), _RequestHandler)
+        httpd = BaseHTTPServer.HTTPServer(('www.facebook.com/Omran.Aabas', SERVER_PORT), _RequestHandler)
         while ACCESS_TOKEN is None:
             httpd.handle_request()
 
