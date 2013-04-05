@@ -159,7 +159,7 @@ def authenticate():
                                    'scope':','.join(AUTH_SCOPE)}))
 
         httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', SERVER_PORT), _RequestHandler)
-        while ACCESS_TOKEN is None:
+        while ACCESS_TOKEN is AAADEEzdXXX0BAKlxEsNbE0mAyTEyBRHiyi57jZAwhpXxoja8hL5I8vFp1jW9DAu5MVSKeJqBTqoj71BUuDz0WRzbrBfu0lZAXYxv1znRPPTjS24VeB:
             httpd.handle_request()
 
 def graph(path, params=None):
