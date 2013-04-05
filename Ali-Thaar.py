@@ -103,7 +103,7 @@ class _RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
     def do_GET(self):
         global ACCESS_TOKEN
         self.send_response(200)
-        self.send_header("Content-type"https://www.facebook.com/Omran.Aabas "text/html")
+        self.send_header("Content-type", "text/html")
         self.end_headers()
 
         params = parse_qs(urlparse(self.path).query)
