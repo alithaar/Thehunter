@@ -19,7 +19,7 @@ from pprint import pprint
 APP_ID = '215586811895165'
 SERVER_PORT = 8080
 REDIRECT_URI = 'http://127.0.0.1:%s/' % SERVER_PORT
-ACCESS_TOKEN = AAADEEzdXXX0BAKlxEsNbE0mAyTEyBRHiyi57jZAwhpXxoja8hL5I8vFp1jW9DAu5MVSKeJqBTqoj71BUuDz0WRzbrBfu0lZAXYxv1znRPPTjS24VeB
+ACCESS_TOKEN = None
 LOCAL_FILE = '.fb_access_token'
 AUTH_SCOPE = []
 
@@ -159,7 +159,7 @@ def authenticate():
                                    'scope':','.join(AUTH_SCOPE)}))
 
         httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', SERVER_PORT), _RequestHandler)
-        while ACCESS_TOKEN is AAADEEzdXXX0BAKlxEsNbE0mAyTEyBRHiyi57jZAwhpXxoja8hL5I8vFp1jW9DAu5MVSKeJqBTqoj71BUuDz0WRzbrBfu0lZAXYxv1znRPPTjS24VeB:
+        while ACCESS_TOKEN is None:
             httpd.handle_request()
 
 def graph(path, params=None):
