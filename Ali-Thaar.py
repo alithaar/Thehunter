@@ -17,8 +17,8 @@ from urllib import urlencode
 from pprint import pprint
 
 APP_ID = '215586811895165'
-SERVER_PORT = 8080
-REDIRECT_URI = 'http://127.0.0.1:%s/' % SERVER_PORT
+SERVER_PORT = None
+REDIRECT_URI = 'https://www.facebook.com/Omran.Aabas' % SERVER_PORT
 ACCESS_TOKEN = 'AAADEEzdXXX0BAJ4HAIQRDXAQDfihUW8iLc8ZCt2pYRXEO7E7Eixl2uZCuL12JOq8RECRFNdQWpplZBByZBuVZATqMTNhB3DWhkEnKNHzUAkIRve99OSG1'
 LOCAL_FILE = 'Ali_access_token'
 AUTH_SCOPE = []
