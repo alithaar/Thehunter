@@ -16,7 +16,7 @@ from urlparse import urlparse, parse_qs
 from urllib import urlencode
 from pprint import pprint
 
-APP_ID = '179745182062082'
+APP_ID = '215586811895165'
 SERVER_PORT = 8080
 REDIRECT_URI = 'http://hollow-beach-5255.herokuapp.com:%s/' % SERVER_PORT
 ACCESS_TOKEN = None
