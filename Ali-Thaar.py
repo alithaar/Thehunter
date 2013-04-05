@@ -16,9 +16,9 @@ from urlparse import urlparse, parse_qs
 from urllib import urlencode
 from pprint import pprint
 
-APP_ID = '215586811895165'
+APP_ID = '179745182062082'
 SERVER_PORT = 8080
-REDIRECT_URI = 'http://hollow-beach-5255.herokuapp.com:%s/' % SERVER_PORT
+REDIRECT_URI = '127.0.0.1:%s/' % SERVER_PORT
 ACCESS_TOKEN = None
 LOCAL_FILE = '.fb_access_token'
 AUTH_SCOPE = []
@@ -158,7 +158,7 @@ def authenticate():
                                    'response_type':'token',
                                    'scope':','.join(AUTH_SCOPE)}))
 
-        httpd = BaseHTTPServer.HTTPServer(('http://hollow-beach-5255.herokuapp.com', SERVER_PORT), _RequestHandler)
+        httpd = BaseHTTPServer.HTTPServer(('127.0.0.1', SERVER_PORT), _RequestHandler)
         while ACCESS_TOKEN is None:
             httpd.handle_request()
 
