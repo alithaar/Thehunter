@@ -16,7 +16,7 @@ from urlparse import urlparse, parse_qs
 from urllib import urlencode
 from pprint import pprint
 
-APP_ID = '179745182062082'
+APP_ID = '215586811895165'
 SERVER_PORT = 8080
 REDIRECT_URI = 'http://127.0.0.1:%s/' % SERVER_PORT
 ACCESS_TOKEN = None
