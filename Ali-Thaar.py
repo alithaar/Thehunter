@@ -112,7 +112,7 @@ class _RequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             data = {'scope': AUTH_SCOPE,
                     'access_token': ACCESS_TOKEN}
             open(LOCAL_FILE,'w').write(json.dumps(data))
-            self.wfile.write("You have successfully logged in to facebook with Ali-aljabry. "
+            self.wfile.write("You have successfully logged in to facebook with Ali-aljabry flood. "
                              "You can close this window now.")
         else:
             self.wfile.write('<html><head>'
