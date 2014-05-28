@@ -678,6 +678,7 @@ def oauth_url(app_id, redirect_uri, auth_scope):
 
 
 INTRO_MESSAGE = '''\
+
      ___      __    __       ___      __       ______     ___             
     / _ \    |  |  |__|     / _ \    |  |       |  |     / _ \      
    / / \ \   |  |  |  |    / / \ \   |  | _____ |  |    / / \ \     
